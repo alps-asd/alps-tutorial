@@ -2,4 +2,18 @@
 <alps
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="https://alps-io.github.io/schemas/alps.xsd">
+    <!-- Ontology -->
+    <descriptor id="id" title="id"/>
+    <descriptor id="articleBody" title="本文"/>
+    <descriptor id="dateCreated" title="作成日付"/>
+
+    <!-- Taxonomy -->
+    <descriptor id="BlogPosting" title="記事" >
+        <descriptor href="#id"/>
+        <descriptor href="#dateCreated"/>
+        <descriptor href="#articleBody"/>
+    </descriptor>
+    <descriptor id="Blog" title="記事リスト">
+        <descriptor href="#BlogPosting"/>
+    </descriptor>
 </alps>
